@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamiento</title>
+    <style>
+        body {
+            background-image: url("templates/5.png");
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #d4af37;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 1000px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+
+        .div-image {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .div-image img {
+            max-width: 80%;
+            height: auto;
+            border: 5px solid #d4af37;
+            border-radius: 15px;
+        }
+
+        .title {
+            margin: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .confirm-button {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .confirm-button a {
+            text-decoration: none;
+            color: #000;
+            background-color: #d4af37;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .confirm-button a:hover {
+            background-color: #b8902f;
+        }
+    </style>
+</head>
+<body>
+    <!-- Div for Another Image -->
+    <div class="div-image">
+        <img src="templates/2.png" alt="Descripción de la imagen">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Final Image -->
+    <div class="div-image">s
+        <img src="templates/3.png" alt="Descripción de la imagen">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Final Image -->
+    <div class="div-image">s
+        <img src="templates/gala.png" alt="Descripción de la imagen">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Final Image -->
+    <div class="div-image">s
+        <img src="templates/ULTI.png" alt="Descripción de la imagen">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Final Image -->
+    <div class="div-image">s
+        <img src="templates/Regalos.png" alt="Descripción de la imagen">
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- Final Image -->
+    <div class="div-image">s
+        <img src="templates/ñoqui.png"Descripción de la imagen">
+    </div>
+    <br>
+    <br>
+    <!-- Confirmation Button -->
+    <div class="confirm-button">
+        <a href="https://wa.me/543884638167?text=Confirmo%20mi%20asistencia%20soy..." target="_blank">Confirma tu asistencia</a>
+    </div>
+
+
+    <script>
+        // Example of adding some animations to text
+        document.querySelectorAll('.fade-in').forEach(element => {
+            element.style.opacity = 0;
+            setTimeout(() => {
+                element.style.opacity = 1;
+                element.style.transition = "opacity 2s";
+            }, 500);
+        });
+    </script>
+</body>
+</html>
