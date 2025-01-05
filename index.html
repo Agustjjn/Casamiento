@@ -69,7 +69,9 @@
             to {
                 opacity: 1;
             }
+            
         }
+    
 
         .confirm-button {
             display: flex;
@@ -101,14 +103,32 @@
             justify-content: center;
             align-items: center;
         }
+
+        .play-button:hover {
+            background-color: #b8902f;
+        }
+        .p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
-    <!-- Reproductor de audio que se reproduce automáticamente -->
-    <audio autoplay muted>
-        <source src="templates/Carin Leon - Que Más Puedo Pedir (Video Oficial).mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <div class="container">
+        <p>Comenzar Musica.</p>
+        <button class="play-button" id="playButton">Reproducir Música</button>
+
+        <audio id="audio" preload="auto">
+            <source src="templates/Carin Leon - Que Más Puedo Pedir (Video Oficial).mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
     <!-- Div for Another Image -->
     <div class="div-image">
         <img src="templates/111.png" alt="Descripción de la imagen">
@@ -163,9 +183,12 @@
                 element.style.transition = "opacity 2s";
             }, 500);
         });
-
-
-        document.querySelector('audio').volume = 0.5; // Ajusta el volumen al 50%
+        // Reproducir el audio cuando el usuario haga clic en el botón
+        document.getElementById('playButton').addEventListener('click', function() {
+            const audio = document.getElementById('audio');
+            audio.play(); // Reproducir el audio
+            this.style.display = 'none'; // Ocultar el botón una vez que se haya hecho clic
+        });
 
     </script>
 </body>
