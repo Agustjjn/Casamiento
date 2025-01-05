@@ -91,9 +91,24 @@
         .confirm-button a:hover {
             background-color: #b8902f;
         }
+        audio {
+            width: 100%;
+            max-width: 600px; /* Ajusta el tamaño máximo */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
+    <!-- Reproductor de audio que se reproduce automáticamente -->
+    <audio autoplay muted>
+        <source src="templates/Carin Leon - Que Más Puedo Pedir (Video Oficial).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <!-- Div for Another Image -->
     <div class="div-image">
         <img src="templates/111.png" alt="Descripción de la imagen">
@@ -148,6 +163,10 @@
                 element.style.transition = "opacity 2s";
             }, 500);
         });
+
+
+        document.querySelector('audio').volume = 0.5; // Ajusta el volumen al 50%
+
     </script>
 </body>
 </html>
